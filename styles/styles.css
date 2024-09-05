@@ -1,0 +1,80 @@
+/* #3E373F
+#C4C5C1
+#89A38F
+#6C8580
+#ACC190 */
+
+:root {
+    --bg-color: rgb(233, 233, 233);
+    --main-color:#C4C5C1 ;
+    --accent-color: #51574e;
+    --accent-hover-color: #817383;
+    --header-color:#6C8580;
+    --button-color:#0e868f;
+}
+
+body, button{
+    background-color: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.2px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--accent-color);
+    box-shadow: 0px 2px 2px darkgray;
+    margin: 1em 0;
+  }
+#logoContain {
+    position: fixed;
+    left: 2em;
+    top: 1.2em;
+}
+#logoContain a {
+    color: var(--bg-color);
+    letter-spacing: 0.1em;
+    font-size: x-large;
+    font-weight: 600;
+    text-shadow: 2px 2px grey;
+}
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.3em;
+    box-shadow: 1px 1px 1px grey;
+}
+.navbar-toggler,.navbar-nav {
+    margin-left: auto;
+    margin-right: 2em;
+    text-align: right;
+    color: var(--main-color);
+}
+.navbar-nav a {
+    color: var(--main-color);
+}
+.navbar-nav > li .active {
+    font-weight: 800;
+}
+.navbar-nav > li > a:active {
+    font-weight: 1000;
+}
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    color: var(--bg-color);
+    font-weight: 600;
+}
+#loginbtn button, #signupbtn button {
+    width: 4rem;
+    height: 2rem;
+    color: var(--bg-color);
+    background-color: var(--button-color);
+    margin-top: 0.3rem;
+    font-size: smaller;
+    font-weight: 300;
+    /* letter-spacing: 0.3px; */
+    margin: 0.3rem;
+}
+#loginbtn button:hover, #signupbtn button:hover {
+    background-color: var(--accent-hover-color);
+    font-weight: 600;
+}
