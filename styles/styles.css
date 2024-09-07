@@ -19,16 +19,15 @@ body, button{
     letter-spacing: 0.2px;
 }
 
-/* NAVBAR */
+/* ----------NAVBAR-------------- */
 .navbar {
     background-color: var(--accent-color);
     box-shadow: 0px 2px 2px darkgray;
     margin: 1em 0;
   }
 #logoContain {
-    position: fixed;
+    position: relative;
     left: 2em;
-    top: 1.2em;
 }
 #logoContain a {
     color: var(--bg-color);
@@ -45,8 +44,8 @@ body, button{
     box-shadow: 1px 1px 1px grey;
 }
 .navbar-toggler,.navbar-nav {
-    margin-left: auto;
     margin-right: 2em;
+    margin-left: auto;
     text-align: right;
     color: var(--main-color);
 }
@@ -71,10 +70,30 @@ body, button{
     margin-top: 0.3rem;
     font-size: smaller;
     font-weight: 300;
-    /* letter-spacing: 0.3px; */
     margin: 0.3rem;
 }
 #loginbtn button:hover, #signupbtn button:hover {
     background-color: var(--accent-hover-color);
     font-weight: 600;
+}
+
+/* ----------HEROHOME------------------------ */
+#herohmContain { 
+    background-image: url(../images/herohm.jpg);
+    background-repeat: no-repeat;
+    /* background-size:cover; */
+    background-position: 50% 60%;
+    height: 30em;
+}
+#herohmContain> div {
+    position: relative;
+    left: 2em;
+    padding: 3em 3em;
+    max-width: 60%;
+    transform: translateY(2em);
+}
+
+.herohmtext {
+    color: var(--main-color);
+    margin: 0.5em 0;
 }
