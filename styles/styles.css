@@ -35,7 +35,7 @@ body, button{
     padding: 2em 4em;
 }
 
-.textpadding h1,p {
+.textpadding h1,h2,h3,h4,h5,p {
     margin: 1em 0;
 }
 
@@ -71,7 +71,9 @@ body, button{
 }
 .navbar-nav a {
     color: var(--main-color);
+    text-decoration: none;
 }
+
 .navbar-nav > li .active {
     font-weight: 800;
 }
@@ -83,27 +85,29 @@ body, button{
     font-weight: 600;
 }
 #loginbtn button, #signupbtn button {
-    width: 4rem;
-    height: 2rem;
+    width: calc(4rem + 1vw);
+    height: calc(2rem + 0.5vh);
     color: var(--bg-color);
     background-color: var(--button-color);
-    margin-top: 0.3rem;
-    font-size: smaller;
+    font-size: calc(0.5rem + 0.5vw);
     font-weight: 300;
-    margin: 0.3rem;
 }
 #loginbtn button:hover, #signupbtn button:hover {
     background-color: var(--accent-hover-color);
     font-weight: 600;
 }
 
+
 /* ----------HEROHOME------------------------ */
-#herohmContain { 
-    background-image: url(../images/herohm.jpg);
+.heroContain { 
     background-repeat: no-repeat;
-    background-position: 50% 60%;
-    background-color: rgb(132, 96, 29);
+    background-size: cover;
+    background-position: right;
     height: 400px;
+}
+
+#herohmContain {
+    background-image: url(../images/herohm.jpg);
 }
 
 .herohmtext {
