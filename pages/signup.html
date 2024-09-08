@@ -28,10 +28,7 @@
               </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mb-0 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <!-- <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"> Find THE Voice </a> -->
-                            
+                    <li class="nav-item dropdown">     
                             <button class="btn btn-md navbtn" type="button">
                                 <a href="../index.html">Find THE Voice</a>
                               </button>
@@ -68,6 +65,36 @@
             </div>
         </div>
     </nav>
+    <!------------SIGNUP FORM------------------>
+    <section id="signuppg">
+        <form class="formContain">
+            <fieldset>
+                <legend id="formlegend"><h2 style="font-weight: 600">Sign Up for Free!</h2></legend>
+                <p>We want to know how we can help you.</p>
+                <label style="font-weight: 700;">Full Name<br>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter full name" class="formfield">
+                </label><br>
+                <label style="font-weight: 700;">Email<br>
+                    <input type="text" name="email" id="email" placeholder="name@company.com" class="formfield">
+                </label><br>
+                <label style="font-weight: 700;">Create a Password <br>
+                    <input type="password" name="createpassword" id="createpassword" placeholder="Choose a password" class="formfield">
+                </label><br>
+                <label style="font-weight: 700;">Confirm Password <br>
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Enter password again" class="formfield">
+                </label><br>
+                <label style="font-weight: 700;" class="btnformfield">I want to... <br>
+                        <input type="radio" class="btn-check" id="findvoice" name="iwantto" autocomplete="off">
+                        <label id="findavoice" class="btn btn-dark" for="findvoice">Find a Voice</label>
+                        <input type="radio" class="btn-check" id="sharevoice" name="iwantto" autocomplete="off">
+                        <label id="sharemyvoice" class="btn btn-dark" for="sharevoice">Share my Voice</label>
+                </label><br>
+                <label>
+                    <button class="formbutton">Sign Up Now</button>
+                </label><br> 
+                <a href="../pages/login.html" class="redirectpglink">Already have an account? Login</a>
+            </fieldset>
+        </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

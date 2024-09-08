@@ -1,0 +1,21 @@
+/*------------------ SIGN UP FORM STYLE--------------- */
+
+label.btn {
+    border-radius: 0;
+    font-size: smaller;
+    width: calc(60vw/2 - 2.1em);
+    height: 5vh;
+    margin-bottom: 5em;
+}
+
+label#findavoice::before {
+    content: "\1F3AC";
+    margin: 0 1em 0 0;
+    font-size: larger;
+}
+
+label#sharemyvoice::before {
+    content: "\1F3A4";
+    margin: 0 1em 0 0;
+    font-size: larger;
+}
