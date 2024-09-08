@@ -17,6 +17,26 @@ body, button{
     background-color: var(--bg-color);
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.2px;
+    font-size: calc(0.5rem + 1vw);
+}
+
+/* addditional css styling for bootstrap filter buttons */
+.btn-dark {
+    color: var(--accent-hover-color);
+    background-color: var(--main-color);
+    border: 1px solid var(--accent-color);
+}
+
+.collapse,.col {
+    display: flex;
+}
+/* ----------TEXT PADDING & MARGINS-------------- */
+.textpadding {
+    padding: 2em 4em;
+}
+
+.textpadding h1,p {
+    margin: 1em 0;
 }
 
 /* ----------NAVBAR-------------- */
@@ -81,19 +101,27 @@ body, button{
 #herohmContain { 
     background-image: url(../images/herohm.jpg);
     background-repeat: no-repeat;
-    /* background-size:cover; */
     background-position: 50% 60%;
-    height: 30em;
-}
-#herohmContain> div {
-    position: relative;
-    left: 2em;
-    padding: 3em 3em;
-    max-width: 60%;
-    transform: translateY(2em);
+    background-color: rgb(132, 96, 29);
+    height: 400px;
 }
 
 .herohmtext {
     color: var(--main-color);
-    margin: 0.5em 0;
 }
+
+/* ----------TALENT FILTER------------------------ */
+#talentfilters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ----------MEDIA QUERY------------------------ */
+/* adjusting hero text max width for larger screens */
+@media screen and (min-width:500px) {
+.heroContain > div {
+    max-width: 65vw;
+}
+}
+    
