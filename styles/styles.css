@@ -99,19 +99,24 @@ body, button{
 
 
 /* ----------HEROHOME------------------------ */
-.heroContain { 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-    height: 400px;
-}
-
 #herohmContain {
-    background-image: url(../images/herohm.jpg);
+    background: url(../images/herohm.jpg) rgba(59, 50, 92, 0.404);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: right;
 }
 
 .herohmtext {
     color: var(--main-color);
+    text-shadow: 1px 1px black;
+}
+
+#herohmContain h1 {
+    transition: all 1s ease-in-out;
+}
+
+#herohmContain h1:hover {
+    transform: scale(1.1) translateY(5%) translateX(5%);
 }
 
 /* ----------TALENT FILTER------------------------ */
@@ -120,43 +125,52 @@ body, button{
     flex-wrap: wrap;
     justify-content: center;
 }
+.textpadding>div {
+    margin-bottom: 2em;
+}
 
+/* ----------TOP CONTRIBUTORS ANIMATION------------------------ */
+#celebrationicon {
+    animation: shake 0.5s;
+}
+#celebrationicon:hover {
+    animation: shake 0.7s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    from {font-size: x-small;}
+    to {font-size: xx-large;}
+  }
 /* ----------GENERIC FORM STYLES------------------------ */
 .formContain {
     text-align: center;
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
-
 label {
     text-align: left;
     font-size: smaller;
     margin: 0.7em;
 }
-
  fieldset a {
     text-decoration: none;
     color: var(--main-color);
     font-weight: 500;
     font-size: smaller;
 }
-
 .formfield,button.formbutton, .btnformfield {
     width: 60vw;
     height: 6vh;
 }
-
 .formContain h1,h2,h3,h4,h5 {
     margin: 0;
 }
-
 button.formbutton {
     color: var(--bg-color);
     background-color: var(--header-color);
     border: 1px solid var(--header-color);
     font-size: smaller;
 }
-
 button.formbutton:hover,  fieldset a:hover {
     background-color: var(--accent-color)
 }
@@ -167,5 +181,10 @@ button.formbutton:hover,  fieldset a:hover {
 .heroContain > div {
     max-width: 65vw;
 }
+}
+@media screen and (min-width:1000px) {
+    .heroContain {
+        height: 500px;
+    }
 }
     
