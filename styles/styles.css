@@ -118,19 +118,30 @@ button#loginbtn:hover, button#signupbtn:hover {
 }
 
 /* ----------TALENT FILTER------------------------ */
+#talentfilterContain {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
 #talentfilters {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.textpadding>div {
+/* .textpadding>div {
     margin-bottom: 2em;
-}
-
+} */
 div.col {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+label.filterbtn {
+    margin-top: 2em;
+    font-size: smaller;
+    width: 25vw;
 }
 /* ----------TOP CONTRIBUTORS ANIMATION------------------------ */
 #celebrationicon {
