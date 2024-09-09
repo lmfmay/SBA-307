@@ -129,6 +129,11 @@ body, button{
     margin-bottom: 2em;
 }
 
+div.col {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* ----------TOP CONTRIBUTORS ANIMATION------------------------ */
 #celebrationicon {
     animation: shake 0.5s;

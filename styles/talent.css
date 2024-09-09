@@ -1,9 +1,20 @@
 /* ----------HEROHOME------------------------ */
 #herotalentContain {
-    background-image: url(../images/herotalent.jpg);
-    background-size: auto;
+    background: url(../images/herotalent.jpg) rgba(59, 50, 92, 0.404);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: right;
 }
+
 .herotalenttext {
-    /* color: var(--main-color); */
-    background-color: rgba(255, 255, 255, 0.753);
+    color: var(--main-color);
+    text-shadow: 1px 1px black;
+}
+
+#herotalentContain h1 {
+    transition: all 1s ease-in-out;
+}
+
+#herotalentContain h1:hover {
+    transform: scale(1.1) translateY(5%) translateX(5%);
 }
